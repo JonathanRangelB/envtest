@@ -6,7 +6,7 @@ namespace envtest
     {
         public static void Main(string[] args)
         {
-            var temp = Environment.GetEnvironmentVariable("nombre");
+            var temp = Environment.GetEnvironmentVariable("NOMBRE");
             if (temp != null)
                 Console.WriteLine(temp);
             else Console.WriteLine("no encontrada");
