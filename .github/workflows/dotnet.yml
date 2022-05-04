@@ -13,6 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: MSbuild instance setup
+      uses: microsoft/setup-msbuild@v1.1
+      with:
+        # Version of Visual Studio to search; defaults to latest if not specified
+        vs-version: 16.11.3
+        # The preferred processor architecture of MSBuild. Can be either "x86" or "x64". "x64" is only available from Visual Studio version 17.0 and later.
+        msbuild-architecture: x86
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
