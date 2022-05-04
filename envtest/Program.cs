@@ -8,7 +8,7 @@ namespace envtest
         {
             var temp = Environment.GetEnvironmentVariable("NOMBRE");
             if (temp != null)
-                Console.WriteLine("mi nombre es: {0}", Convert.FromBase64String(temp));
+                Console.WriteLine("mi nombre es: {0}", temp);
             else Console.WriteLine("no encontrada");
         }
     }
