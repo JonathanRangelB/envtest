@@ -20,4 +20,4 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: execute
-      run: dotnet run
+      run: mono ./bin/Debug/envtest.exe
