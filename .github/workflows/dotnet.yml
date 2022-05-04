@@ -29,4 +29,4 @@ jobs:
     - name: Project Build
       run: msbuild envtest.sln 
     - name: execute
-      run: mono ./envtest/bin/Debug/envtest.exe
+      run: dotnet ./envtest/bin/Debug/envtest.exe
