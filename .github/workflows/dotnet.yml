@@ -29,4 +29,6 @@ jobs:
     - name: Project Build
       run: msbuild envtest.sln 
     - name: execute
-      run: ./envtest/bin/Debug/envtest.exe
+      run: |
+        echo {{ secrets.NOMBRE }}
+        ./envtest/bin/Debug/envtest.exe
