@@ -10,7 +10,8 @@ jobs:
   build:
 
     runs-on: windows-latest
-
+    env:
+     NOMBRE: '${{ secrets.NOMBRE }}'
     steps:
     - uses: actions/checkout@v3
     - name: MSbuild instance setup
