@@ -19,5 +19,7 @@ jobs:
         dotnet-version: 5.0.x
     - name: Restore dependencies
       run: dotnet restore
+    - name: Project Build
+      run: msbuild .\envtest.sln
     - name: execute
       run: mono ./envtest/bin/Debug/envtest.exe
